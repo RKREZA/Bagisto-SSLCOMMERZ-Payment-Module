@@ -1,0 +1,27 @@
+{
+    "name": "RKREZA/SSLCOMMERZ",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md Rezaul Karim",
+            "email": "rkreza24@gmail.com"
+        }
+    ],
+    "require": {
+        "bagisto/laravel-core": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Custom\\SSLCOMMERZ\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Custom\\SSLCOMMERZ\\Providers\\SSLCOMMERZServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}
