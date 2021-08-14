@@ -1,12 +1,12 @@
 <?php 
 
-namespace RKREZA\SSLCOMMERZ\Providers;
+namespace RKREZA\SSLCommerz\Providers;
 
  use Illuminate\Support\ServiceProvider;
  use Illuminate\Support\Facades\Event;
 
  
- class SSLCOMMERZServiceProvider extends ServiceProvider
+ class SSLCommerzServiceProvider extends ServiceProvider
  {
      /**
      * Bootstrap services.
@@ -18,6 +18,7 @@ namespace RKREZA\SSLCOMMERZ\Providers;
           include __DIR__ . '/../Http/routes.php';
           $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'sslcommerz_view');
           $this->loadTranslationsFrom(__DIR__ . '/../Resources/lang', 'sslcommerz_lang');
+
      }
 
      /**
@@ -27,6 +28,7 @@ namespace RKREZA\SSLCOMMERZ\Providers;
      */
      public function register()
      {
+
           $this->mergeConfigFrom(dirname(__DIR__) . '/../Config/paymentmethods.php', 'paymentmethods');
           $this->mergeConfigFrom(dirname(__DIR__) . '/../Config/system.php', 'core');
      }

@@ -1,5 +1,5 @@
 <?php
-namespace RKREZA\SSLCOMMERZ\Library\SslCommerz;
+namespace RKREZA\SSLCommerz\Library\SslCommerz;
 
 interface SslCommerzInterface
 {

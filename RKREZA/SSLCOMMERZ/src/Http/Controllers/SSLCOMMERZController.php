@@ -1,14 +1,14 @@
 <?php
 
-namespace RKREZA\SSLCOMMERZ\Http\Controllers;
+namespace RKREZA\SSLCommerz\Http\Controllers;
 
 use Webkul\Checkout\Facades\Cart;
 use Webkul\Sales\Repositories\OrderRepository;
 use Illuminate\Support\Facades\Config;
-use RKREZA\SSLCOMMERZ\Payment\Standard;
-use RKREZA\SSLCOMMERZ\Library\sslcommerz\SslCommerzNotification;
+use RKREZA\SSLCommerz\Payment\Standard;
+use RKREZA\SSLCommerz\Library\SslCommerz\SslCommerzNotification;
 
-class SSLCOMMERZController extends Controller
+class SSLCommerzController extends Controller
 {
     
     protected $orderRepository;
@@ -33,6 +33,7 @@ class SSLCOMMERZController extends Controller
     {
 
         $sslc = new SslCommerzNotification();
+        # initiate(Transaction Data , false: Redirect to SSLCOMMERZ gateway/ true: Show all the Payement gateway here )
         $payment_options = $sslc->makePayment($this->standard->getFormFields(), 'hosted');
 
         if (!is_array($payment_options)) {

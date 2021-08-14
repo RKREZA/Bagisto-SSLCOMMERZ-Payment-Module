@@ -2,14 +2,14 @@
 return [
     'sslcommerz'   => [
         'code'                      => 'sslcommerz',
-        'title'                     => 'SSLCOMMERZ',
-        'description'               => 'SSLCOMMERZ Description',
-        'class'                     => 'RKREZA\SSLCOMMERZ\Payment\Standard',
+        'title'                     => 'SSLCommerz',
+        'description'               => 'SSLCommerz Description',
+        'class'                     => 'RKREZA\SSLCommerz\Payment\Standard',
         'sandbox'                   => false,
         'active'                    => true,
         'store_id'                  => 'demo_id',
         'store_passwd'              => 'demo_password',
-        'sort'                      => 20,
+        'sort'                      => 4,
         'connect_from_localhost'    => false,
         'is_direct_pay_enable'      => true,
 

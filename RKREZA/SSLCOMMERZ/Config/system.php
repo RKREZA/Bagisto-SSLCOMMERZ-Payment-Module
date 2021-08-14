@@ -4,7 +4,7 @@ return [
     [
         'key'    => 'sales.paymentmethods.sslcommerz',
         'name'   => 'sslcommerz_lang::app.admin.system.sslcommerz',
-        'sort'   => 20,
+        'sort'   => 4,
         'fields' => [
             [
                 'name'          => 'title',

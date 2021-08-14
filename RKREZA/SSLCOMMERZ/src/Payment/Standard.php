@@ -1,6 +1,6 @@
 <?php
 
-namespace RKREZA\SSLCOMMERZ\Payment;
+namespace RKREZA\SSLCommerz\Payment;
 
 use Illuminate\Support\Facades\Config;
 use Webkul\Payment\Payment\Payment;

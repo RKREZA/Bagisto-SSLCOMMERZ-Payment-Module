@@ -1,5 +1,5 @@
 # Bagisto SSLCOMMERZ Payment Module
- Version 1.0
+Version 1.0
 
 ### Requirements
 
@@ -13,7 +13,13 @@
 
 ##### c. Go to config\app.php & add "RKREZA\SSLCOMMERZ\Providers\SSLCOMMERZServiceProvider::class" (without double quotation) inside 'providers'
 
-##### e. Go to composer.json & add "RKREZA\\SSLCOMMERZ\\": "packages/RKREZA/SSLCOMMERZ/src" inside 'autoload' -> 'psr-4'
+##### d. Go to composer.json & add "RKREZA\\SSLCOMMERZ\\": "packages/RKREZA/SSLCOMMERZ/src" inside 'autoload' -> 'psr-4'
+
+##### e. add these following to app\Http\Middleware\VerifyCsrfToken.php
+			
+			protected $except = [
+		        'paypal/standard/ipn', '/pay-via-ajax', '/success','/cancel','/fail','/ipn'
+		    ];
 
 ##### f. Run the following command
 		~~~
@@ -24,3 +30,5 @@
 		~~~
 
 ##### g. Now, you are good to go.
+
+##### Note : Your amount must be atlest BDT 10 , otherwise SSLCommerz will not accept the payment.

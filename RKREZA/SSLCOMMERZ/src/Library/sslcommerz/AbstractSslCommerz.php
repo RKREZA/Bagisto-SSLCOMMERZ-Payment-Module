@@ -1,6 +1,6 @@
 <?php
 
-namespace RKREZA\SSLCOMMERZ\Library\SslCommerz;
+namespace RKREZA\SSLCommerz\Library\SslCommerz;
 
 abstract class AbstractSslCommerz implements SslCommerzInterface
 {

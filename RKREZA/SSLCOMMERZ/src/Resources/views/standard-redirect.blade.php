@@ -1,4 +1,4 @@
-<?php $sslcommerz = app('RKREZA\SSLCOMMERZ\Payment\Standard') ?>
+<?php $sslcommerz = app('RKREZA\SSLCommerz\Payment\Standard') ?>
 
 <body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
     You will be redirected to the SSLCOMMERZ website in a few seconds.
