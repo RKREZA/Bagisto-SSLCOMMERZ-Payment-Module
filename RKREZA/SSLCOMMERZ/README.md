@@ -1,4 +1,4 @@
-# Bagisto SSLCOMMERZ Payment Module
+# Bagisto SSLCommerz Payment Module
 Version 1.0
 
 ### Requirements
@@ -9,11 +9,11 @@ Version 1.0
 
 ##### a. Download & Extract the contents of zip
 
-##### b. Create folder "RKREZA" inside "packages" folder & copy the "SSLCOMMERZ" folder inside it
+##### b. Create folder "RKREZA" inside "packages" folder & copy the "SSLCommerz" folder inside it
 
-##### c. Go to config\app.php & add "RKREZA\SSLCOMMERZ\Providers\SSLCOMMERZServiceProvider::class" (without double quotation) inside 'providers'
+##### c. Go to config\app.php & add "RKREZA\SSLCommerz\Providers\SSLCommerzServiceProvider::class" (without double quotation) inside 'providers'
 
-##### d. Go to composer.json & add "RKREZA\\SSLCOMMERZ\\": "packages/RKREZA/SSLCOMMERZ/src" inside 'autoload' -> 'psr-4'
+##### d. Go to composer.json & add "RKREZA\\SSLCommerz\\": "packages/RKREZA/SSLCommerz/src" inside 'autoload' -> 'psr-4'
 
 ##### e. add these following to app\Http\Middleware\VerifyCsrfToken.php
 			
